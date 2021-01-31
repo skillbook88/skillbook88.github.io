@@ -10,6 +10,7 @@
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
     {% endfor %}
+  {% endif %}
     <div>
       <div class="sidebar-nav-item">Category</div>
       <nav class="content-ul">
@@ -72,8 +73,6 @@
         </div>
       </div>
     </div>
-  {% endif %}
-      
   </div>
 {% endif %}
 
