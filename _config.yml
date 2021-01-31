@@ -97,14 +97,14 @@ author:
   avatar           : "/assets/img/my2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "South Korea"
-  email            : #"hongkunwork88@gmail.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:hongkunwork88@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://how2overcome.net"
+      url: "http://how2overcome.net"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
