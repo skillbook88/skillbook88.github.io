@@ -344,6 +344,18 @@
   }
 }
 
+/* Sidebar content */
+/*.sidebar a {
+  font-weight: normal;
+  color: #fff;
+}*/
+.sidebar-item {
+  padding: 1rem;
+}
+.sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
