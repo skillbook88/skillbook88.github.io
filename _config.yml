@@ -279,3 +279,7 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Sidbar
+category_dir: category/
+tag_dir: tag/
