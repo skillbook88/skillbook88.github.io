@@ -4,7 +4,7 @@
     ><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
     Category:
     </strong>
-    <p >
+    <p>
     {% for category in site.categories %}
     <a
         href="/categories/{{ category[0] | slugify: 'pretty' }}"
@@ -13,17 +13,16 @@
     >
         {{ category[0] }}
         <span class="category-count">{{category | last | size}}</span>
-    </a><br></br>
+    </a><br>
     {% endfor %}
     </p>
 </p>
 
 <p class="page__taxonomy">
-    <strong
-      ><i class="fas fa-tags" aria-hidden="true"></i>
+    <strong><i class="fas fa-tags" aria-hidden="true"></i>
       Tags:
     </strong>
-    <div class="page__taxonomy-item-2">
+    <p>
         {% assign first = site.tags.first %}
         {% assign max = first[1].size %}
         {% assign min = max %}
@@ -65,7 +64,7 @@
         {% endif %}
         <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
         {% endfor %}
-      </div>
+    </p>
 </p>
 
 
