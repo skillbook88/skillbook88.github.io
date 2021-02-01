@@ -15,10 +15,9 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
     <p class="page__taxonomy">
-      <strong
-      ><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
+      <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
       Category:
-      </strong>
+      </strong><!--
       <p >
       {% for category in site.categories %}
       <a
@@ -30,14 +29,14 @@
           <span class="category-count">{{category | last | size}}</span>
       </a>
       {% endfor %}
-      </p>
+      </p>-->
   </p>
 
     <p class="page__taxonomy">
       <strong
         ><i class="fas fa-tags" aria-hidden="true"></i>
         Tags:
-      </strong>
+      </strong><!--
       <br /><br />
       <div>
           {% assign first = site.tags.first %}
@@ -81,7 +80,7 @@
           {% endif %}
           <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
           {% endfor %}
-        </div>
+        </div>-->
 
     <!--{% include category-tag-list.html %}  -->
   {% endif %}
