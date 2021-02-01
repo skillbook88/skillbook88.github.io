@@ -8,12 +8,12 @@
     {% for category in site.categories %}
     <a
         href="/categories/{{ category[0] | slugify: 'pretty' }}"
-        class="page__taxonomy category-item"
+        class="page__taxonomy-item-2 category-item"
         rel="tag"
     >
         {{ category[0] }}
         <span class="category-count">{{category | last | size}}</span>
-    </a>
+    </a><br></br>
     {% endfor %}
     </p>
 </p>
