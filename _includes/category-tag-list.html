@@ -1,5 +1,4 @@
 <!-- _include/category-tag-list.html -->
-
 <p class="page__taxonomy">
     <strong
     ><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
@@ -9,7 +8,7 @@
     {% for category in site.categories %}
     <a
         href="/categories/{{ category[0] | slugify: 'pretty' }}"
-        class="page__taxonomy-item-2 category-item"
+        class="page__taxonomy category-item"
         rel="tag"
     >
         {{ category[0] }}
@@ -24,7 +23,7 @@
       ><i class="fas fa-tags" aria-hidden="true"></i>
       Tags:
     </strong>
-    <div>
+    <div class="page__taxonomy-item-2">
         {% assign first = site.tags.first %}
         {% assign max = first[1].size %}
         {% assign min = max %}
@@ -64,7 +63,7 @@
         {% assign index = color | minus: 10 %}
         {% assign color = arr[index] %}
         {% endif %}
-        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" class="page__taxonomy-item-2" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
         {% endfor %}
       </div>
 </p>

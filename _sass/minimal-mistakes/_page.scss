@@ -334,21 +334,6 @@ body {
   }
 }
 
-.page__taxonomy-item-2 {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  padding: 3px 5px;
-  text-decoration: none;
-  //border: 1px solid mix(#000, $border-color, 25%);
-  //border-radius: $border-radius;
-
-  &:hover {
-    text-decoration: none;
-    color: $link-color-hover;
-  }
-}
-
 .taxonomy__section {
   margin-bottom: 2em;
   padding-bottom: 1em;
