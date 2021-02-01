@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dark"  # "default" # "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "en-US"
-title                    : "How To Overcome"
+title                    : "영웅 스킬북"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "How To Overcome"
-description              : "An amazing website."
-url                      : "https://how2overcome.github.io"
+name                     : "스킬북"
+description              : "모르면, 찾아보고, 익혀보자"
+url                      : "https://skillbook88.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/img/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/img/logo.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -93,18 +93,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Overcome"
-  avatar           : "/assets/img/my2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  name             : "스킬북"
+  avatar           : "/assets/img/my.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "모르면, 찾아보고, 익혀보자"
   location         : "South Korea"
   email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hongkunwork88@gmail.com"
+      #url: "mailto:hongkunwork88@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "http://how2overcome.net"
+      #url: "http://how2overcome.net"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -113,7 +113,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/how2overcome"
+      url: "https://github.com/skillbook88"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -129,7 +129,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/how2overcome"
+      url: "https://github.com/skillbook88"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
