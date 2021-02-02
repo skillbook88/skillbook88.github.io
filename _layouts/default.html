@@ -16,9 +16,11 @@
   <script> 
     var jbNum = prompt( '암호를 입력하세요.', '' );
     if ( jbNum == 1) {
-        document.getElementById("cont").style.display = "block";
-    } else {
-        document.getElementById("cont").style.display = "none";
+        callFunction();
+    } 
+    
+    function callFunction(obj) {
+            document.getElementById("cont1").style.display = "block";  //==> 보이기
     }
   </script>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -26,7 +28,7 @@
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
-    <div class="initial-content" id ="cont" style ="display:block">
+    <div class="initial-content" id ="cont1" style ="display:block">
       {{ content }}
     </div>
 
