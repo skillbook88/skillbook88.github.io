@@ -28,8 +28,10 @@
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
-    <div class="initial-content" id ="cont1" style ="display:none">
-      {{ content }}
+    <div id ="cont1" style ="display:none">
+      <div class="initial-content">
+        {{ content }}
+      </div>
     </div>
 
     {% if site.search == true %}
