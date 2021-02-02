@@ -8,25 +8,25 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}"><!--class="no-js">-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-  <script> 
-    var jbNum = prompt( '암호를 입력하세요.', '' );
-    if ( jbNum == 1) {
-      $(".initial-content").show();
-    } else {
-      $(".initial-content").hide();
-    }
-    
-    function callFunction(obj) {
-            alert(jbNum);
-            //document.getElementById(id).style.visibility = "hidden";
-    }
-  </script>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    <script> 
+      var jbNum = prompt( '암호를 입력하세요.', '' );
+      if ( jbNum == 1) {
+        $(".initial-content").show();
+      } else {
+        $(".initial-content").hide();
+      }
+      
+      function callFunction(obj) {
+              alert(jbNum);
+              //document.getElementById(id).style.visibility = "hidden";
+      }
+    </script>
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
