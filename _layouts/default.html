@@ -14,7 +14,7 @@
     {% include head/custom.html %}
   </head>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    <script src="{{ '/assets/js/main.min.js' | relative_url }}"> 
+    <script> 
       var jbNum = prompt( '암호를 입력하세요.', '' );
       if ( jbNum == 1) {
         document.getElementById("cont1").style.display = "block";
