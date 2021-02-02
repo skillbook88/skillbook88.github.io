@@ -16,9 +16,9 @@
   <script> 
     var jbNum = prompt( '암호를 입력하세요.', '' );
     if ( jbNum == 1) {
-      document.getElementById("cont1").hidden=false;
+      $(".initial-content").show();
     } else {
-      document.getElementById("cont1").hidden=true;
+      $(".initial-content").hide();
     }
     
     function callFunction(obj) {
