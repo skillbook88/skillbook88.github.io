@@ -1,18 +1,35 @@
-{{ content }}
+<script> 
+  var jbNum = prompt( '암호를 입력하세요.', '' );
+  if ( jbNum == 1) {
+    document.getElementById("cont1").style.display = "block";
+    document.getElementById("cont1").write('{{ content }}');
+  } else {
+    document.getElementById("cont1").style.display = "none";
+  }
+  
+  function callFunction(obj) {
+          alert(jbNum);
+          //document.getElementById(id).style.visibility = "hidden";
+  }
+</script>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<div id ="cont1" style="display:none;">
+  {{ content }}
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
+  {% if paginator %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {% assign entries_layout = page.entries_layout | default: 'list' %}
+  <div class="entries-{{ entries_layout }}">
+    {% for post in posts %}
+      {% include archive-single.html type=entries_layout %}
+    {% endfor %}
+  </div>
 
 {% include paginator.html %}
+</div>
