@@ -13,13 +13,20 @@
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-
+  <script> 
+    var jbNum = prompt( '암호를 입력하세요.', '' );
+    if ( jbNum == '나도전설스킬배우고싶다') {
+        document.getElementById("cont").style.display = "block";
+    } else {
+        document.getElementById("test").style.display = "none";
+    }
+  </script>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
-    <div class="initial-content">
+    <div class="initial-content" id ="cont" style ="display:none">
       {{ content }}
     </div>
 
